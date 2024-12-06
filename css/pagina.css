@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cabeza{
+    background-color: black;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.Menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.Menu .Navegar ul li{
+    position: relative;
+    float: left;
+}
+.Menu .Navegar ul li a{
+ font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+    font-weight: 600;
+}
+#Menu{
+    display: none;
+}
+.Menu-icono{
+    width: 50px;
+}
+
+.Menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.cabeza-contenido{
+text-align: center;
+}
+
+.header-txt h1{
+    font-size: 60px;
+    color:white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    }
+
+.header-txt p{
+    color: white;
+    font-size: 16px;
+    padding: 0 250px;
+    margin: bottom 45px; ;
+}
+.btn-1{
+    display: inline-block;
+    padding: 12px 45px;
+    border: 1px solid white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    margin: 30px;
+}
+
+.btn-1:hover{
+    text-decoration: white;
+    color: black;
+    background-color: white;
+}
+    
+.general{
+    padding: 50px 0;
+    text-align: center;
+}
+.general-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.Juguete-1-txt img{
+    width: 300px;
+    margin-bottom: 15px;
+}
+.Juguete-2-txt img{
+    width: 300px;
+    margin-bottom: 15px;
+}
+.Juguete-3-txt img{
+    width: 300px;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 60px;
+    text-transform: uppercase;
+    color: black;
+}
+.txt h3{
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.txt p{
+    color: black;
+    font-size: 20px;
+}
+.general2{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.general2-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.sponsor-1-txt img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+.sponsor-2-txt img{
+    width: 170px;
+    margin-bottom: 10px;
+}
+.sponsor-3-txt img{
+    width: 110px;
+    margin-bottom: 10px;
+}
+
+.txt h4{
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.footer{
+    padding: 20px 0 0;
+    text-align: center;
+}
+.form{
+    margin-top: 35px;
+}
+.campo{
+    margin-right: 10px;
+    padding: 10px 35px;
+    border: 2px solid white;
+    outline: none;
+    color: black;
+}
+.campo::placeholder{
+    color: black;
+}
+.btn-2{
+    margin-right: 10px;
+    padding: 10px 35px;
+    border: 2px solid black ;
+    color: black;
+    background-color: white;
+}
+.footer-txt{
+    margin-top: 100px;
+    border-top: 1px solid green;
+    padding: 20px 0;
+    color: rgb(0, 0, 0);
+}
+.footer-txt p{
+    color: white;
+    font-size: 16px;
+}
+.footer .container h2{
+    color: white;
+}
+.footer {
+    background-color: black;
+}
+@media(max-width :991px){
+    .Menu{
+        padding: 30px;
+    }
+    .Menu label{
+        display: initial;
+    }
+    .Menu .Navegar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+    .Menu .Navegar ul li{
+        width: 100%;
+    }
+    #Menu:checked ~ .Navegar{
+        display: initial;
+    }
+    .cabeza{
+        min-height: 0vh;
+    }
+    .cabeza-contenido{
+        padding: 100px 30px;
+    } 
+    .header-txt h1{
+        font-size: 50px;
+    }
+    .header-txt p{
+        padding: 0%;
+    }
+    .general{
+        padding: 30px 30px 0 30px;
+    }
+    .general-content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .general2{
+        padding: 30px 30px 0 30px;
+    }
+    .general2-content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .jueguete-1-txt,
+    .jueguete-2-txt,
+    .jueguete-3-txt{
+        height: 350px;
+        padding: 80px 40px;
+        margin-bottom: 10px;
+    }
+    .sponsor-txt{
+        height: 400px;
+        padding: 50px 40px;
+        margin-bottom: 10px;
+    }
+    .sponsor-1-txt,
+    .sponsor-2-txt,
+    .sponsor-3-txt{
+        height: 300px;
+        padding: 1px 1px;
+        margin-bottom: 10px;
+    }
+    .footer{
+        padding: 0;
+        margin-top: -140px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px; 
+    }
+    .campo{
+        margin: 0 0 10px 0;
+    }
+    .footer-txt{
+        margin-top: 30px;
+    }
+}
